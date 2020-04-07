@@ -11,7 +11,7 @@ class Triangle
   def kind
     lengths = [@length_1, @length_2, @length_3]
 
-    lengths.any? { |length| length == 0 }
+    if lengths.any? { |length| length == 0 }
 
     if @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
