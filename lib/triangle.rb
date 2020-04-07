@@ -17,7 +17,8 @@ class Triangle
       raise TriangleError
     elsif @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
-    elsif @length_1 == @length_2 && @length_2 != @length_3
+      #if any two lengths are equal but the third is not 
+    elsif @length_1 == @length_2 && @length_2 != @length_3 || @length_2 == @length_3 && @length_3 != @length_1 || 
       :isosceles
     elsif @length_1 != @length_2 && @length_2 != @length_3 && @length_1 != @length_3
       :scalene
