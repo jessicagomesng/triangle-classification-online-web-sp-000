@@ -14,7 +14,7 @@ class Triangle
 
     if lengths.any? { |length| length <= 0 }
       raise TriangleError
-    elsif !real_triangle.include?
+    elsif real_triangle.include?(false)
       raise TriangleError
     elsif @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
