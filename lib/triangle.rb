@@ -13,7 +13,7 @@ class Triangle
 
     if lengths.any? { |length| length <= 0 }
       raise TriangleError
-    elsif (@length_1 + @length_2)< @length_3 || @length_2 + @length_3 < @length_1 || @length_1 + @length_3 < @length_2
+    elsif (@length_1 + @length_2)<@length_3 || @length_2 + @length_3 < @length_1 || @length_1 + @length_3 < @length_2
       raise TriangleError
     elsif @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
