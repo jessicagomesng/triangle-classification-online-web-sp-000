@@ -12,6 +12,8 @@ class Triangle
     lengths = [@length_1, @length_2, @length_3]
 
     if lengths.any? { |length| length == 0 }
+      raise TriangleError
+    end 
 
     if @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
