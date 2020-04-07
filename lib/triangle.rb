@@ -13,9 +13,9 @@ class Triangle
 
     if lengths.any? { |length| length == 0 }
       raise TriangleError
-    end 
+    end
 
-    if @length_1 == @length_2 && @length_2 == @length_3
+  elsif @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
     elsif @length_1 == @length_2 && @length_2 != @length_3
       :isosceles
