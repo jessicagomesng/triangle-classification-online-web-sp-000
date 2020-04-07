@@ -10,7 +10,7 @@ class Triangle
 
   def kind
     lengths = [@length_1, @length_2, @length_3]
-    sum_of_lengths = [@length_1 + @length_2, @length_2 + @length_3, @length_3 + @length_1]
+    sum_1 = @length_1 + @length_2, @length_2 + @length_3, @length_3 + @length_1]
 
     if lengths.any? { |length| length <= 0 }
       raise TriangleError
