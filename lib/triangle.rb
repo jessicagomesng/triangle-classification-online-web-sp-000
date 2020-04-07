@@ -10,7 +10,8 @@ class Triangle
 
   def kind
 
-    class TriangleError < StandardError 
+    class TriangleError < StandardError
+    end 
     if @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
     elsif @length_1 == @length_2 && @length_2 != @length_3
