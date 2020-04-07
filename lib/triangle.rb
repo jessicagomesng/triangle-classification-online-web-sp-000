@@ -10,13 +10,11 @@ class Triangle
 
   def kind
     lengths = [@length_1, @length_2, @length_3]
-    sum_1 = @length_1 + @length_2
-    sum_2 = @length_2 + @length_3
-    sum_3 = @length_3 + @length_1
+    real_triangle = [(@length_1 + @length_2 > @length_3), (@length_1 + @length_3 > @length_2), (@length_2 + @length_3 > @length_1) ]
 
     if lengths.any? { |length| length <= 0 }
       raise TriangleError
-    elsif sum_1 < @length_3 || sum_2 < @length_1 || sum_3 < @length_2 
+    elsif sum_1 < @length_3 || sum_2 < @length_1 || sum_3 < @length_2
       raise TriangleError
     elsif @length_1 == @length_2 && @length_2 == @length_3
       :equilateral
